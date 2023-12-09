@@ -1,0 +1,14 @@
+
+@import '../../colors.module.css';
+
+.headerContainer {
+  color: var(--rose-pine-foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 10px;
+  border-bottom: 1px solid #ebf8ff;
+}
+
+

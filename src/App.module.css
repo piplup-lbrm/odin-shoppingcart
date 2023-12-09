@@ -1,0 +1,17 @@
+
+@import './colors.module.css';
+
+body {
+  background-color: var(--rose-pine-background);
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+

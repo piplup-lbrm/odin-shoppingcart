@@ -1,0 +1,29 @@
+
+/* Primary Colors */
+:root {
+  --rose-pine-background: #191724;
+  --rose-pine-foreground: #ebf8ff;
+  --rose-pine-primary: #79b6f2;
+  --rose-pine-secondary: #6699cc;
+  --rose-pine-accent: #575279;
+
+  /* Additional Colors */
+  --rose-pine-red: #ef5350;
+  --rose-pine-yellow: #e2b93d;
+  --rose-pine-green: #7eca9c;
+  --rose-pine-blue: #82aaff;
+  --rose-pine-purple: #c792ea;
+
+  /* Transparent Colors */
+  --rose-pine-transparent-background: #19172440;
+  --rose-pine-transparent-foreground: #ebf8ff40;
+  --rose-pine-transparent-primary: #79b6f240;
+  --rose-pine-transparent-secondary: #6699cc40;
+  --rose-pine-transparent-accent: #57527940;
+  --rose-pine-transparent-red: #ef535040;
+  --rose-pine-transparent-yellow: #e2b93d40;
+  --rose-pine-transparent-green: #7eca9c40;
+  --rose-pine-transparent-blue: #82aaff40;
+  --rose-pine-transparent-purple: #c792ea40;
+}
+

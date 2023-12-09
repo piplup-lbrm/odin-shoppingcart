@@ -1,0 +1,36 @@
+
+@import '../../../colors.module.css';
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid;
+  border-color: var(--rose-pine-foreground);
+}
+
+.cartTitle {
+  color: var(--rose-pine-foreground);
+  border-bottom: 1px solid;
+  padding-left: 10px;
+  padding-right: 60px;
+  margin-left: 10px;
+}
+
+.cartHeader {
+  color: var(--rose-pine-foreground);
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.cartColumn {
+  background-color: var(--rose-pine-transparent-accent);
+  border-radius: 15px;   
+  padding: 5px;
+  margin: 5px;
+}
+

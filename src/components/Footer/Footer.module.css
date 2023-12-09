@@ -1,0 +1,23 @@
+
+@import '../../colors.module.css';
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  flex: 1fr;
+  max-height: 60px;
+}
+
+.footerContent {
+  color: var(--rose-pine-foreground);
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: 1px solid
+}

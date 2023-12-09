@@ -1,0 +1,46 @@
+
+@import '../../../colors.module.css';
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  overflow: auto;
+  flex:1;
+  max-height: 510px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--rose-pine-transparent-accent);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: var(--rose-pine-foreground);
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+/* WebKit-based browsers (Chrome, Safari) */
+.itemContainer::-webkit-scrollbar {
+  width: 10px;
+  transition: opacity 0.2s;
+}
+
+.itemContainer::-webkit-scrollbar-thumb {
+  background-color: var(--rose-pine-purple);
+  border-radius: 10px;
+}
+
+.itemContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+

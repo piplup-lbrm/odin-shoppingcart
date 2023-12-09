@@ -1,0 +1,39 @@
+
+@import '../../../colors.module.css';
+
+.genreContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid;
+  border-color: var(--rose-pine-foreground);
+}
+
+.title {
+  color: var(--rose-pine-foreground);
+  border-bottom: 1px solid;
+  padding-left: 10px;
+  padding-right: 60px;
+  margin-left: 10px;
+}
+
+.listContainer {
+  list-style-type: none;
+  color: var(--rose-pine-foreground);
+}
+
+.listItem {
+  background-color: var(--rose-pine-transparent-accent);
+  border-radius: 15px;   
+  padding: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.listItem:hover {
+  background-color: var(--rose-pine-transparent-red);
+}
+

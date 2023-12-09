@@ -1,0 +1,9 @@
+
+.shopPageContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  flex: 1;
+}
+
+

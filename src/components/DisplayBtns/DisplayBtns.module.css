@@ -11,8 +11,8 @@
 
 .btn {
   font-weight: bold;
-  color: var(--rose-pine-foreground);
-  background-color: var(--rose-pine-transparent-green);
+  color: var(--rose-pine-backgroundground);
+  background-color: var(--rose-pine-green);
   font-size: 1rem;
   min-width: 100px;
   border: none;
@@ -20,8 +20,26 @@
   padding: 1rem, 0px;
   transition: background-color 0.5s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+}
+
+.btnActive {
+  font-weight: bold;
+  color: var(--rose-pine-backgroundground);
+  background-color: var(--rose-pine-red);
+  font-size: 1rem;
+  min-width: 100px;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem, 0px;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn:hover {
-  background-color: var(--rose-pine-transparent-red);
+  background-color: var(--rose-pine-red);
 }
+

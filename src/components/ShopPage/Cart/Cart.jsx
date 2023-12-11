@@ -3,6 +3,7 @@ import styles from './Cart.module.css'
 
 function Cart() {
 
+
   return (
     <div className={styles.cartContainer}>
       <h3 className={styles.cartTitle}>Cart</h3>
@@ -11,10 +12,10 @@ function Cart() {
         <div className={styles.cartColumn}>Quantity</div>
         <div className={styles.cartColumn}>Price</div>
       </div>
-
-    </div>
+    </div> 
   )
 }
+
 
 export default Cart
 

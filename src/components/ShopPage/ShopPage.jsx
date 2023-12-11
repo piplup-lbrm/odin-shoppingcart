@@ -1,17 +1,22 @@
 
+/********************************** imports **********************************/
+import styles from './ShopPage.module.css'
+/***************************** import components *****************************/
+import Cart from './Cart/Cart'
 import GenreNav from './GenreNav/GenreNav'
 import ItemList from './ItemList/ItemList'
-import Cart from './Cart/Cart'
-import CheckOut from './CheckOut/CheckOut'
-import styles from './ShopPage.module.css'
+/****************************** import contexts ******************************/
+import { useCart } from '../../contexts'
 
 function ShopPage() {
+
+  const { cartDisplay } = useCart()
 
   return (
     <div className={styles.shopPageContainer}>
       <GenreNav />
       <ItemList />
-      <Cart />
+      { cartDisplay && <Cart /> }
     </div>
   )
 }

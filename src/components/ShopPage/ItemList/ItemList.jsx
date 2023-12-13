@@ -1,30 +1,34 @@
 
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+/********************************** imports **********************************/
 import styles from './ItemList.module.css'
+
+/***************************** import components *****************************/
+import { Link } from 'react-router-dom'
+
+/****************************** import contexts ******************************/
+import { useItems } from '../../../contexts'
 
 function ItemList() {
 
-  const [items, setItems] = useState([])
+  const items = useItems()
 
-  useEffect(() => {
-    axios.get('https://fakestoreapi.com/products')
-      .then(response => {
-        setItems(response.data)
-      })
-    .catch(error => {
-        console.log('Error fetching data:', error)
-    })
-  }, [])
+  if (!items) {
+    return <div>Loading...</div>
+  }
 
   return (
     <div className={styles.itemContainer}>
       {items.map(item => (
-        <div key={item.id} className={styles.product}>
-          <img src={item.image} alt={item.title} />
-          <p>{item.title}</p>
-          <p>${item.price}</p>
-        </div>
+        <Link 
+          className={styles.link}
+          key={item.id} 
+          to={`/shop/${item.id}`}>
+          <div className={styles.product}>
+            <img src={item.image} alt={item.title} />
+            <p>{item.title}</p>
+            <p>${item.price}</p>
+          </div>
+        </Link>
       ))}
     </div>
   )

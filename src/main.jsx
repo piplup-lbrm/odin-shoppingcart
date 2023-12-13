@@ -10,7 +10,8 @@ import App from './App.jsx'
 import ErrorPage from './ErrorPage'
 import HomePage from './components/HomePage/HomePage'
 import ShopPage from './components/ShopPage/ShopPage'
-
+import ItemCard from './components/ShopPage/ItemCard/ItemCard.jsx'
+import CheckOut from './components/ShopPage/CheckOut/CheckOut.jsx'
 
 const Router = createBrowserRouter([
   {
@@ -25,6 +26,16 @@ const Router = createBrowserRouter([
       {
         path: '/shop',
         element: <ShopPage />,
+        children: [
+          {
+            path: '/shop/:id',
+            element: <ItemCard />,
+          },
+          {
+            path: '/shop/checkout',
+            element: <CheckOut />
+          },
+        ],
       },
     ],
   },
@@ -36,3 +47,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={Router} />
   </React.StrictMode>,
 )
+
+
+

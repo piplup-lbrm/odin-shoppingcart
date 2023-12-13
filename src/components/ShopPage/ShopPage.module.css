@@ -2,7 +2,7 @@
 .shopPageContainer {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
+  justify-content: space-between;
   flex: 1;
 }
 

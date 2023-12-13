@@ -11,6 +11,10 @@
   max-height: 510px;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .product {
   display: flex;
   flex-direction: column;
@@ -21,6 +25,8 @@
   text-align: center;
   border-radius: 10px;
   color: var(--rose-pine-foreground);
+  min-height: 306px;
+  max-height: 306px
 }
 
 .product img {

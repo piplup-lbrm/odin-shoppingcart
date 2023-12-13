@@ -8,16 +8,19 @@ import { Outlet } from 'react-router-dom'
 import styles from './App.module.css'
 /****************************** import contexts ******************************/
 import { CartProvider } from './contexts'
+import { ItemProvider } from './contexts'
 
 function App() {
 
   return (
     <div className={styles.mainContainer}>
       <CartProvider>
-        <Header />
-        <DisplayBtns />
-        <Outlet />
-        <Footer />
+        <ItemProvider>
+          <Header />
+          <DisplayBtns />
+          <Outlet />
+          <Footer />
+        </ItemProvider>
       </CartProvider>
     </div>
   )

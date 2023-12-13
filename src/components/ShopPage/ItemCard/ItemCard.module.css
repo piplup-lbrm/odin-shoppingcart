@@ -1,0 +1,29 @@
+
+@import '../../../colors.module.css';
+
+.mainContainer {
+  background-color: var(--rose-pine-transparent-red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.imgDisplay {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.detailsContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.discription {
+  max-width: 300px;
+}
+
